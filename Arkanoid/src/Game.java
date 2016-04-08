@@ -3,6 +3,7 @@ import java.awt.*;
 import java.awt.event.*;
 
 public class Game extends JPanel {
+	
 	private Dimension gameField = new Dimension(400,300); 
 	private Player player;
 	
