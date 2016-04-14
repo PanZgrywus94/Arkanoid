@@ -11,6 +11,8 @@ public class Main {
 		
 		game = new Game(frame);
 		game.setSize(frame.getSize());
+		
+		
 		frame.add(game);
 		
 		frame.setVisible(true);

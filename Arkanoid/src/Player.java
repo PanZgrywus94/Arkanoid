@@ -18,8 +18,24 @@ public class Player {
 		
 	}
 	
+	public boolean collidesWith(Rectangle object) {
+		return hitBox.intersects(object);
+	}
+	
+	public void setX(int x) {
+		hitBox.x = x;
+	}
+	
 	public void setY(int y) {
 		hitBox.y = y;
+	}
+	
+	public int getWigth() {
+		return this.hitBox.width;
+	}
+	
+	public int getHeight() {
+		return this.hitBox.height;
 	}
 	
 	
