@@ -112,3 +112,4 @@ public class Game extends JPanel {
 	}
 
 }
+//problem z restartem gry!!!
