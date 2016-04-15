@@ -15,7 +15,7 @@ public class Game extends JPanel {
 		container.addKeyListener(new KeyAdapter() {
 			public void keyPressed(KeyEvent e){
 				
-				if (!isRunning || !isPaused) {
+				if (!isRunning || isPaused) {
 					if (e.getKeyCode() == KeyEvent.VK_ENTER) start();
 				} else {
 					if (e.getKeyCode() == KeyEvent.VK_RIGHT) player.moveOnXAxis(20);
@@ -36,6 +36,7 @@ public class Game extends JPanel {
 		player.setX((int)((gameField.getWidth()-Player.standardPlayerWidth)/2));
 		player.setY(gameField.height-Player.standardPlayerHeight);
 		repaint();
+		
 		
 	}
 	
